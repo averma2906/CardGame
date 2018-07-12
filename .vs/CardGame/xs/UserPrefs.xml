@@ -1,0 +1,27 @@
+﻿<Properties StartupConfiguration="{90BFAAB2-26FA-060F-6255-50A66A8853DA}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Script/DragHandler.cs">
+    <Files>
+      <File FileName="Assets/Script/Logic/PlayingCard.cs" Line="11" Column="6" />
+      <File FileName="Assets/Script/Logic/CardNominalValue.cs" Line="1" Column="1" />
+      <File FileName="Assets/Script/Logic/Player.cs" Line="4" Column="47" />
+      <File FileName="Assets/Script/Helpers/MonoBehaviourExtended.cs" Line="1" Column="1" />
+      <File FileName="Assets/Script/Helpers/Singleton.cs" Line="18" Column="6" />
+      <File FileName="Assets/Script/DeckDetails.cs" Line="23" Column="1" />
+      <File FileName="Assets/Script/Logic/CardScript.cs" Line="36" Column="28" />
+      <File FileName="Assets/Script/DeckManager.cs" Line="61" Column="5" />
+      <File FileName="Assets/Script/SceneControllers/PlayerCountSelectionController.cs" Line="11" Column="32" />
+      <File FileName="Assets/Script/SceneControllers/SceneController.cs" Line="5" Column="29" />
+      <File FileName="Assets/Script/Helpers/Game.cs" Line="1" Column="1" />
+      <File FileName="Assets/Script/SceneControllers/GamePlaySceneController.cs" Line="11" Column="1" />
+      <File FileName="Assets/Script/TableHandler.cs" Line="21" Column="2" />
+      <File FileName="Assets/Script/DragHandler.cs" Line="67" Column="3" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.CardGame PreferredExecutionTarget="Unity.Editor" />
+  <MultiItemStartupConfigurations />
+</Properties>
