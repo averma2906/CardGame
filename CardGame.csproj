@@ -319,6 +319,7 @@
     <Compile Include="Assets\Script\DeckDetails.cs" />
     <Compile Include="Assets\Script\DeckManager.cs" />
     <Compile Include="Assets\Script\DragHandler.cs" />
+    <Compile Include="Assets\Script\GameManager.cs" />
     <Compile Include="Assets\Script\Helpers\Game.cs" />
     <Compile Include="Assets\Script\Helpers\MonoBehaviourExtended.cs" />
     <Compile Include="Assets\Script\Helpers\Singleton.cs" />
@@ -326,8 +327,6 @@
     <Compile Include="Assets\Script\Logic\CardNominalValue.cs" />
     <Compile Include="Assets\Script\Logic\CardScript.cs" />
     <Compile Include="Assets\Script\Logic\CardSuit.cs" />
-    <Compile Include="Assets\Script\Logic\Hand.cs" />
-    <Compile Include="Assets\Script\Logic\HandEvaluator.cs" />
     <Compile Include="Assets\Script\Logic\Player.cs" />
     <Compile Include="Assets\Script\Logic\PlayingCard.cs" />
     <Compile Include="Assets\Script\SceneControllers\GamePlaySceneController.cs" />

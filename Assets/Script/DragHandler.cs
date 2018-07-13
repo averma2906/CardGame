@@ -3,7 +3,8 @@ using System.Collections;
 using UnityEngine.EventSystems;
 
 public class DragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler {
-	public static GameObject itemBeingDragged;
+	
+    public static GameObject itemBeingDragged;
 	public bool isDragable = false;
 	Vector3 startPosition;
 	Transform startParent;
@@ -70,7 +71,7 @@ public class DragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
 			Debug.Log ("<color>I am here </color> "+transform.parent.gameObject.name);
 
 			transform.SetParent(startParent);
-			 transform.position  = startPosition;
+			transform.position  = startPosition;
 		}
 	}
 	

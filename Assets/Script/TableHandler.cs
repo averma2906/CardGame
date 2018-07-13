@@ -15,8 +15,11 @@ public class TableHandler : MonoBehaviour,IDropHandler {
 	public void OnDrop (PointerEventData eventData)
 	{
         GameObject go  = DragHandler.itemBeingDragged;
+        if (go == null)
+            return;
         go.GetComponent<RectTransform>().SetParent(gameObject.transform, true);
         go.GetComponent<CardScript>().ShowCard();
+        GameManager.instance.NextTurn();
          
 	}
 	#endregion

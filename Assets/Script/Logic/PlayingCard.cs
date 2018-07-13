@@ -13,11 +13,11 @@ public class PlayingCard
 	    //Index = index;
 		//card = ((Game.CardID)index).ToString();
 		card = card.Remove (0, 5);
-		Debug.Log ("Card " + card);
+		//Debug.Log ("Card " + card);
 		var suit =card.Substring(1);
-		Debug.Log ("Suit " + suit);
+		//Debug.Log ("Suit " + suit);
 		var rank =  card.Substring(0, 1);
-		Debug.Log ("rank " + rank);
+		//Debug.Log ("rank " + rank);
         CardSuit cardSuit = new CardSuit();
         switch (suit)
         {
@@ -147,9 +147,6 @@ public class PlayingCard
             case "K":
                 cardNominalValue = CardNominalValue.King;
                 break;
-
-
-
         }
         return new PlayingCard() {Suit = cardSuit, NominalValue = cardNominalValue};
     }

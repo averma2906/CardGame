@@ -33,6 +33,7 @@ public class DeckManager : MonoBehaviour {
         }
         Suffle();
         Suffle();
+        DistributeCard();
     }
 
     void Suffle()
@@ -51,11 +52,8 @@ public class DeckManager : MonoBehaviour {
 
         }
        
-        for (int i = 0; i < cardCounts; i++)
-        {
-            print("GameObject Name : " + deckCards[i].GetComponent<CardScript>().cardName);
-        }
-        DistributeCard();
+        
+       // DistributeCard();
     }
 
     //Distributing the Card evenly in all selected players
@@ -67,6 +65,8 @@ public class DeckManager : MonoBehaviour {
         {
             deckCards[j].GetComponent<RectTransform>().SetParent(playerDeckMarker[i].transform, false);
             deckCards[j].GetComponent<CardScript>().tablePanel = deckDetailsList[i].myTablePanel;
+            deckDetailsList[i].Cards.Add(deckCards[j]);
+            print(j+ " i value " + i);
             i++;
             if (i == Game.playerCount)
                 i = 0;
