@@ -11,12 +11,13 @@ public class GameManager : MonoBehaviour {
     int turnCount = 0; 
     void Start () {
         instance = this;
+
 	}
 	
 	public void StartRound()
     {
         playedCards = new List<CardScript>();
-        turnCount = Game.playerCount;
+        turnCount = Game.playerCount+1;
     }
 
     public void AddCardToPlayedCards(GameObject go)
@@ -31,7 +32,9 @@ public class GameManager : MonoBehaviour {
         for (int i = 0; i < playedCards.Count-1;i++)
         {
             //add enum for this
+            Debug.Log(winnerCard.cardName+" Card : " + playedCards[i + 1].cardName);
             int value = PlayingCard.Compare(winnerCard.myCard, playedCards[i + 1].myCard);
+
             if(value == 0 )
             {
                 isWardNeedToContinue = false;
@@ -39,9 +42,10 @@ public class GameManager : MonoBehaviour {
             }
             else if(value ==2)
             {
+                
                 isWardNeedToContinue = true;
             }
-
+            Debug.Log(isWardNeedToContinue+ " Winner Card " + winnerCard.cardName);
         }
 
         if(!isWardNeedToContinue)
@@ -54,9 +58,12 @@ public class GameManager : MonoBehaviour {
                 {
                     playedCards[i].Owner.GetComponent<DeckDetails>().cards.Remove(playedCards[i].gameObject);
                     playedCards[i].Owner = winnerCard.Owner;
+                 }
+                    playedCards[i].GetComponent<DragHandler>().isDragable = false;
                     playedCards[i].Owner.GetComponent<DeckDetails>().cards.Add(playedCards[i].gameObject);
-                    playedCards[i].transform.SetParent(winnerCard.Owner.gameObject.GetComponent<DeckDetails>().layoutObject.transform);
-                }
+                    playedCards[i].HideCard();
+                playedCards[i].GetComponent<RectTransform>().SetParent(winnerCard.Owner.gameObject.GetComponent<DeckDetails>().layoutObject.transform,false);
+
 
             }
         }
@@ -66,9 +73,10 @@ public class GameManager : MonoBehaviour {
     public void NextTurn()
     {
         turnCount--;
-
+        Debug.Log("Compare is called "+turnCount);
         if(turnCount==0)
         {
+            
             //evaluate the round and compair card 
             CompareCards();
             //return;
@@ -82,7 +90,7 @@ public class GameManager : MonoBehaviour {
                 if (i == currentTurnIndex)
                 {
 
-                    int count = DeckManager._instance.deckDetailsList[i].Cards.Count - 1;
+                    int count = DeckManager._instance.deckDetailsList[i].layoutObject.transform.childCount - 1;
                     Debug.Log("count " + count);
                     DeckManager._instance.deckDetailsList[i].layoutObject.transform.GetChild(count).GetComponent<DragHandler>().isDragable = true;
                     canvasGroup.alpha = 1.0f;

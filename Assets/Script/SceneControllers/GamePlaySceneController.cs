@@ -20,6 +20,7 @@ public class GamePlaySceneController : SceneController
 
     void StartWithDelay()
     {
+        GameManager.instance.StartRound();
         GameManager.instance.NextTurn();
     }
 	 

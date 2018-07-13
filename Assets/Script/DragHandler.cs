@@ -34,6 +34,7 @@ public class DragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
 		if (!isDragable)
 			return;
 		//transform.position = eventData.position;
+        transform.GetComponent<CardScript>().ShowCard();
 		transform.position = Input.mousePosition;
 		//Debug.Log ("Drag item current position " + eventData.position);
 	}
@@ -69,7 +70,7 @@ public class DragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
         if(transform.parent != startParent && (transform.parent != GetComponent<CardScript>().tablePanel.transform))
         {
 			Debug.Log ("<color>I am here </color> "+transform.parent.gameObject.name);
-
+            transform.GetComponent<CardScript>().HideCard();
 			transform.SetParent(startParent);
 			transform.position  = startPosition;
 		}

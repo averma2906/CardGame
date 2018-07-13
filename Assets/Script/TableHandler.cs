@@ -19,6 +19,7 @@ public class TableHandler : MonoBehaviour,IDropHandler {
             return;
         go.GetComponent<RectTransform>().SetParent(gameObject.transform, true);
         go.GetComponent<CardScript>().ShowCard();
+        GameManager.instance.AddCardToPlayedCards(go);
         GameManager.instance.NextTurn();
          
 	}
