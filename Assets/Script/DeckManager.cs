@@ -64,7 +64,9 @@ public class DeckManager : MonoBehaviour {
         for (int j = 0; j < cardCounts;j++)
         {
             deckCards[j].GetComponent<RectTransform>().SetParent(playerDeckMarker[i].transform, false);
-            deckCards[j].GetComponent<CardScript>().tablePanel = deckDetailsList[i].myTablePanel;
+            CardScript cardScript = deckCards[j].GetComponent<CardScript>();
+            cardScript.tablePanel = deckDetailsList[i].myTablePanel;
+            cardScript.Owner = deckDetailsList[i].gameObject.GetComponent<Player>();
             deckDetailsList[i].Cards.Add(deckCards[j]);
             print(j+ " i value " + i);
             i++;

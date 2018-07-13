@@ -151,9 +151,17 @@ public class PlayingCard
         return new PlayingCard() {Suit = cardSuit, NominalValue = cardNominalValue};
     }
 
-    public static bool Compare(PlayingCard thisCard , PlayingCard otherCard)
+    public static int Compare(PlayingCard thisCard , PlayingCard otherCard)
     {
-        return (((int) thisCard.Suit == (int) otherCard.Suit) &&
-                ((int) thisCard.NominalValue == (int) otherCard.NominalValue));
+
+        if ((int)thisCard.NominalValue < (int)otherCard.NominalValue)
+            return 0;
+        else if ((int)thisCard.NominalValue > (int)otherCard.NominalValue)
+            return 1;
+        else
+            return 2;
+        
+            // return (((int) thisCard.Suit == (int) otherCard.Suit) &&
+        //        ((int) thisCard.NominalValue == (int) otherCard.NominalValue));
     }
 }

@@ -1,20 +1,21 @@
 ﻿<Properties StartupConfiguration="{90BFAAB2-26FA-060F-6255-50A66A8853DA}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Script/DeckDetails.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Script/Logic/CardScript.cs">
     <Files>
       <File FileName="Assets/Script/Logic/PlayingCard.cs" Line="20" Column="5" />
       <File FileName="Assets/Script/Logic/CardNominalValue.cs" Line="1" Column="1" />
-      <File FileName="Assets/Script/Logic/Player.cs" Line="4" Column="47" />
+      <File FileName="Assets/Script/Logic/Player.cs" Line="37" Column="19" />
       <File FileName="Assets/Script/Helpers/MonoBehaviourExtended.cs" Line="1" Column="1" />
       <File FileName="Assets/Script/Helpers/Singleton.cs" Line="18" Column="6" />
-      <File FileName="Assets/Script/DeckDetails.cs" Line="10" Column="35" />
-      <File FileName="Assets/Script/DeckManager.cs" Line="73" Column="9" />
+      <File FileName="Assets/Script/DeckDetails.cs" Line="17" Column="32" />
+      <File FileName="Assets/Script/DeckManager.cs" Line="36" Column="26" />
       <File FileName="Assets/Script/SceneControllers/PlayerCountSelectionController.cs" Line="11" Column="32" />
       <File FileName="Assets/Script/SceneControllers/SceneController.cs" Line="5" Column="29" />
       <File FileName="Assets/Script/Helpers/Game.cs" Line="8" Column="14" />
-      <File FileName="Assets/Script/SceneControllers/GamePlaySceneController.cs" Line="16" Column="35" />
+      <File FileName="Assets/Script/SceneControllers/GamePlaySceneController.cs" Line="6" Column="1" />
       <File FileName="Assets/Script/TableHandler.cs" Line="22" Column="35" />
-      <File FileName="Assets/Script/DragHandler.cs" Line="44" Column="56" />
-      <File FileName="Assets/Script/GameManager.cs" Line="26" Column="73" />
+      <File FileName="Assets/Script/DragHandler.cs" Line="74" Column="4" />
+      <File FileName="Assets/Script/GameManager.cs" Line="26" Column="5" />
+      <File FileName="Assets/Script/Logic/CardScript.cs" Line="15" Column="12" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

@@ -1,45 +1,26 @@
 ﻿using System;
 using UnityEngine;
 
-public class Player: Helpers.Singleton<Player>
+public class Player: MonoBehaviour
 {
-    public string PlayerName { get; private set; }
+    public string playerName;
+    public int playerID;
 
-
-    public Player(string playerName)
-    {
-        PlayerName = playerName;
-    }
+     
   
    /* public PlayerAction Action
     {
         get { return PlayerBehavior.CurrentPlayerAction; }
         set { PlayerBehavior.CurrentPlayerAction = value; }
     }*/
-
-    public void IsActive(bool active)
-    {
-        
-    }
-
-
-
-    private PlayingCard[] _playingCard1;
-
-    public PlayingCard[] PlayingCard1
-    {
-        get { return _playingCard1; }
-    }
-
      
 
-    public void SetPlayingCards(PlayingCard[] playingCard1 )
-    {
-        _playingCard1 = playingCard1;
 
 
-        //PlayerBehavior.SetPlayerCards(playingCard1, playingCard2);
-    }
+     
+     
+
+    
 
 
 
@@ -71,7 +52,6 @@ public class Player: Helpers.Singleton<Player>
         WaitingForTurn,
         WaitingForAction,
         Played,
-        IsAllIn,
-        Folded
+        IsAllIn
     }
 }

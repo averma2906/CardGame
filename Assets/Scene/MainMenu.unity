@@ -884,6 +884,7 @@ GameObject:
   - component: {fileID: 400418580}
   - component: {fileID: 400418582}
   - component: {fileID: 400418583}
+  - component: {fileID: 400418584}
   m_Layer: 5
   m_Name: DeckPanel1
   m_TagString: Untagged
@@ -969,6 +970,19 @@ MonoBehaviour:
   myTablePanel: {fileID: 1022217869}
   layoutObject: {fileID: 857463362}
   cards: []
+--- !u!114 &400418584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 400418578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0a7eebbb6fb1064b84b235ad6d90fda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerName: player1
+  playerID: 0
 --- !u!1 &452323826
 GameObject:
   m_ObjectHideFlags: 0
@@ -1230,6 +1244,7 @@ GameObject:
   - component: {fileID: 651607012}
   - component: {fileID: 651607014}
   - component: {fileID: 651607015}
+  - component: {fileID: 651607016}
   m_Layer: 5
   m_Name: DeckPanel2
   m_TagString: Untagged
@@ -1315,6 +1330,19 @@ MonoBehaviour:
   myTablePanel: {fileID: 452323826}
   layoutObject: {fileID: 123964323}
   cards: []
+--- !u!114 &651607016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 651607010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0a7eebbb6fb1064b84b235ad6d90fda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerName: player2
+  playerID: 1
 --- !u!1 &656321327
 GameObject:
   m_ObjectHideFlags: 0
@@ -1449,6 +1477,7 @@ GameObject:
   - component: {fileID: 697061655}
   - component: {fileID: 697061657}
   - component: {fileID: 697061658}
+  - component: {fileID: 697061659}
   m_Layer: 5
   m_Name: DeckPanel3
   m_TagString: Untagged
@@ -1534,6 +1563,19 @@ MonoBehaviour:
   myTablePanel: {fileID: 1234796346}
   layoutObject: {fileID: 2082892855}
   cards: []
+--- !u!114 &697061659
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 697061653}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0a7eebbb6fb1064b84b235ad6d90fda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerName: player3
+  playerID: 2
 --- !u!1 &704578140
 GameObject:
   m_ObjectHideFlags: 0
@@ -2134,6 +2176,7 @@ GameObject:
   - component: {fileID: 855054497}
   - component: {fileID: 855054499}
   - component: {fileID: 855054500}
+  - component: {fileID: 855054501}
   m_Layer: 5
   m_Name: DeckPanel4
   m_TagString: Untagged
@@ -2219,6 +2262,19 @@ MonoBehaviour:
   myTablePanel: {fileID: 818777378}
   layoutObject: {fileID: 1941714}
   cards: []
+--- !u!114 &855054501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 855054495}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0a7eebbb6fb1064b84b235ad6d90fda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerName: player4
+  playerID: 3
 --- !u!1 &857463362
 GameObject:
   m_ObjectHideFlags: 0

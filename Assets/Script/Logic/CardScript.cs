@@ -12,7 +12,7 @@ public class CardScript : MonoBehaviour {
     Image cardImage;
     private bool isSelected= false;
     public GameObject tablePanel;
-
+    private  Player owner;
     public bool IsSelected
     {
         get
@@ -20,6 +20,19 @@ public class CardScript : MonoBehaviour {
             return isSelected;
         }
 
+    }
+
+    public Player Owner
+    {
+        get
+        {
+            return owner;
+        }
+
+        set
+        {
+            owner = value;
+        }
     }
 
     // Use this for initialization
